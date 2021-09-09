@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+}
+
+header {
+  background-color: rgb(131, 80, 248);
+  position: absolute;
+  height: 85px;
+  left: 8.33%;
+  right: 8.33%;
+  top: 41px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  padding: 40px;
+}
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+  font-size: larger;
+}
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 30px;
+  color: #fff;
+  text-decoration: none;
+}
+header .logo {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.banner {
+  padding-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  min-height: 125vh;
+}
+.banner div {
+  position: relative;
+  display: inline-flexbox;
+}
+div.textbox {
+  font-size: 48px;
+  margin: auto;
+}
+div.textbox h2 {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: Fredoka One;
+}
+div.textbox span {
+  color: rgba(131, 80, 248, 1);
+  font-weight: bold;
+}
+.picOffice img {
+  width: 400px;
+  height: 400px;
+}
+.picOffice {
+  margin: auto;
+}
+
+.projectSection {
+  background-color: black;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 40px;
+}
+.projectSection h2 {
+  color: #fff;
+  grid-column: span;
+  text-align: center;
+  margin: auto;
+  font-size: 36px;
+  line-height: 49px;
+}
+.projSelection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.projSelection div {
+  position: relative;
+  width: 544px;
+  margin: auto;
+  height: 737px;
+  background: radial-gradient(
+    95.73% 95.73% at 100% 0%,
+    rgba(255, 255, 255, 0.544) 0%,
+    rgba(114, 114, 114, 0.056) 100%
+  );
+  border: 5px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 77px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.projSelection div a {
+  height: 100%;
+
+  margin: 0;
+  text-align: center;
+}
