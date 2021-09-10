@@ -7,7 +7,6 @@
   font-weight: normal;
 }
 
-
 header {
   background-color: rgb(131, 80, 248);
   position: absolute;
@@ -99,8 +98,7 @@ div.textbox span {
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
 }
-
-.projSelection div {
+.projSelection  a {
   position: relative;
   width: 544px;
   margin: auto;
@@ -117,13 +115,13 @@ div.textbox span {
   display: flex;
   position: relative;
   align-items: center;
-
-}
-
-.projSelection div a {
-  margin: auto;
   text-decoration: none;
+}
+.projSelection div {
+  margin: auto;
   color: #fff;
   font-weight: 700;
   font-size: 36px;
 }
+
+
