@@ -7,6 +7,7 @@
   font-weight: normal;
 }
 
+
 header {
   background-color: rgb(131, 80, 248);
   position: absolute;
@@ -113,13 +114,16 @@ div.textbox span {
   box-sizing: border-box;
   border-radius: 77px;
   text-align: center;
-  display: inline-block;
+  display: flex;
   position: relative;
+  align-items: center;
+
 }
 
 .projSelection div a {
-  height: 100%;
-
-  margin: 0;
-  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 36px;
 }
