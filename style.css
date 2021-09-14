@@ -1,3 +1,4 @@
+/* Global styles */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@
   font-weight: normal;
 }
 
+/* Header for all pages */
 header {
   background-color: rgb(131, 80, 248);
   position: absolute;
@@ -45,12 +47,13 @@ header .logo {
   letter-spacing: 2px;
 }
 
+/* Index.html*/
 .banner {
   padding-top: 150px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
-  min-height: 125vh;
+  min-height: 100vh;
 }
 .banner div {
   position: relative;
@@ -98,7 +101,7 @@ div.textbox span {
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
 }
-.projSelection  a {
+.projSelection a {
   position: relative;
   width: 544px;
   margin: auto;
@@ -124,4 +127,37 @@ div.textbox span {
   font-size: 36px;
 }
 
+/* ProjectPage_Code.html */
+.projSelectionP {
+  position: relative;
+  padding-top: 150px;
+}
 
+.container {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  grid-template-rows: 200px 200px;
+  grid-gap: 50px 0px;
+  box-sizing: border-box;
+  height: auto;
+  left: 8.33%;
+  right: 8.33%;
+  background-color: #8cffa0;
+  position: absolute;
+}
+
+.container div {
+  background-color: #8ca0ff;
+  padding: 5px;
+}
+#pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#info1 {
+  color: white;
+}
+#info2 {
+  color: white;
+}
