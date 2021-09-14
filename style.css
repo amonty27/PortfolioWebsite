@@ -134,10 +134,17 @@ div.textbox span {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  text-decoration: none;
 }
 
 #box a {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+#box a div {
   text-decoration: none;
   color: #fff;
   font-family: Fredoka One;
@@ -145,7 +152,10 @@ div.textbox span {
   font-weight: normal;
   font-size: 72px;
   line-height: 87px;
+  display: flex;
+  align-items: center;
 }
+
 /* ProjectPage_Code.html */
 .projSelectionP {
   padding-top: 30px;
@@ -182,4 +192,14 @@ div.textbox span {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   padding-left: 10px;
+}
+
+#info h2 {
+  text-decoration: none;
+  color: black;
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 58px;
 }
