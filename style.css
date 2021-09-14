@@ -7,6 +7,7 @@
   font-style: normal;
   font-weight: normal;
 }
+
 /*wrapper for all pagges*/
 #wrapper {
   max-width: 1000px;
@@ -15,10 +16,12 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+body {
+  background-color: black;
+}
 /* Header for all pages */
 header {
   background-color: rgb(131, 80, 248);
-  position: absolute;
   height: 85px;
   left: 8.33%;
   right: 8.33%;
@@ -28,6 +31,7 @@ header {
   align-items: center;
   border-radius: 25px;
   padding: 40px;
+  margin-top: 20px;
 }
 header ul {
   position: relative;
@@ -54,9 +58,8 @@ header .logo {
   letter-spacing: 2px;
 }
 
-/* Index.html*/
+/* Index.html Banner Section*/
 .banner {
-  padding-top: 150px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
@@ -70,11 +73,15 @@ div.textbox {
   font-size: 48px;
   margin: auto;
 }
+div.textbox {
+  color: #fff;
+}
 div.textbox h2 {
   font-size: 60px;
   font-weight: 400;
   font-family: Fredoka One;
 }
+
 div.textbox span {
   color: rgba(131, 80, 248, 1);
   font-weight: bold;
@@ -87,13 +94,9 @@ div.textbox span {
   margin: auto;
 }
 
+/* Index.html ProjectSection Section */
 .projectSection {
-  background-color: black;
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: auto;
-  grid-gap: 40px;
 }
 .projectSection h2 {
   color: #fff;
@@ -103,16 +106,23 @@ div.textbox span {
   font-size: 36px;
   line-height: 49px;
 }
-.projSelection {
+.containerPS {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
+  grid-template-rows: 100px minmax(100px, auto);
+  gap: 20px 20px;
 }
-.projSelection a {
-  position: relative;
-  width: 544px;
+
+#title {
+  grid-column-end: span 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+#box {
+  width: 100%;
+  height: 900px;
   margin: auto;
-  height: 737px;
   background: radial-gradient(
     95.73% 95.73% at 100% 0%,
     rgba(255, 255, 255, 0.544) 0%,
@@ -120,25 +130,26 @@ div.textbox span {
   );
   border: 5px solid #ffffff;
   box-sizing: border-box;
-  border-radius: 77px;
-  text-align: center;
+  border-radius: 75px;
   display: flex;
-  position: relative;
   align-items: center;
+  justify-content: space-around;
   text-decoration: none;
 }
-.projSelection div {
-  margin: auto;
+
+#box a {
+  text-decoration: none;
   color: #fff;
-  font-weight: 700;
-  font-size: 36px;
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 87px;
 }
-
 /* ProjectPage_Code.html */
-
 .projSelectionP {
-  padding-top: 150px;
-  min-height: 100vh;
+  padding-top: 30px;
+  min-height: 50vh;
 }
 
 .container {
@@ -150,7 +161,6 @@ div.textbox span {
   height: auto;
   left: 8.33%;
   right: 8.33%;
-  position: absolute;
 }
 
 .container div {
