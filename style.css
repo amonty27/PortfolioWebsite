@@ -129,8 +129,8 @@ div.textbox span {
 
 /* ProjectPage_Code.html */
 .projSelectionP {
-  position: relative;
   padding-top: 150px;
+  min-height: 100vh;
 }
 
 .container {
