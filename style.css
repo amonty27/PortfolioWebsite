@@ -65,10 +65,7 @@ header .logo {
   grid-gap: 40px;
   min-height: 100vh;
 }
-.banner div {
-  position: relative;
-  display: inline-flexbox;
-}
+
 div.textbox {
   font-size: 48px;
   margin: auto;
@@ -165,7 +162,7 @@ div.textbox span {
 .container {
   display: grid;
   grid-template-columns: 1.5fr 2fr;
-  grid-template-rows: 200px 200px;
+  grid-template-rows: 100px 200px 200px;
   grid-gap: 50px 0px;
   box-sizing: border-box;
   height: auto;
@@ -174,8 +171,22 @@ div.textbox span {
 }
 
 .container div {
-  background-color: white;
   padding: 0px;
+}
+
+#titleC {
+  grid-column-end: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#titleC h2 {
+  color: #fff;
+  font-size: 64px;
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
 }
 #pic img {
   width: 100%;
@@ -192,6 +203,7 @@ div.textbox span {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   padding-left: 10px;
+  background-color: #fff;
 }
 
 #info h2 {
