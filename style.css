@@ -51,11 +51,18 @@ header ul li a {
 }
 header .logo {
   color: #fff;
+  font-family: Fredoka One;
   font-size: 24px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
   letter-spacing: 2px;
+}
+
+/* section Container for all pages */
+.secContainer {
+  padding-top: 30px;
+  min-height: 50vh;
 }
 
 /* Index.html Banner Section*/
@@ -153,12 +160,7 @@ div.textbox span {
   align-items: center;
 }
 
-/* ProjectPage_Code.html */
-.projSelectionP {
-  padding-top: 30px;
-  min-height: 50vh;
-}
-
+/* projectPage_Code.html & projectPage_Art.html*/
 .container {
   display: grid;
   grid-template-columns: [line1c] 1.5fr [line2c] 2fr [line3c];
@@ -304,4 +306,43 @@ div.textbox span {
   font-weight: normal;
   font-size: 2rem;
   line-height: 58px;
+}
+
+/* projectPageC_1.html*/
+.containerTemp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto 100px;
+  grid-gap: 50px 50px;
+  box-sizing: border-box;
+  height: auto;
+  left: 8.33%;
+  right: 8.33%;
+}
+
+#imgc1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#imgc1 img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  justify-self: center;
+}
+
+.containerTemp div#title h2 {
+  color: #fff;
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 87px;
+}
+
+#parac1 {
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
