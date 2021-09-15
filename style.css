@@ -161,8 +161,8 @@ div.textbox span {
 
 .container {
   display: grid;
-  grid-template-columns: 1.5fr 2fr;
-  grid-template-rows: 100px 200px 200px;
+  grid-template-columns: [line1c] 1.5fr [line2c] 2fr [line3c];
+  grid-template-rows: [line1r] 100px [line2r] 200px [line3r] 200px [line4r];
   grid-gap: 50px 0px;
   box-sizing: border-box;
   height: auto;
@@ -175,7 +175,8 @@ div.textbox span {
 }
 
 #titleC {
-  grid-column-end: span 2;
+  grid-column-start: line1c;
+  grid-column-end: line3c;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -188,14 +189,74 @@ div.textbox span {
   font-style: normal;
   font-weight: normal;
 }
-#pic img {
+#contain1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  grid-column-start: line1c;
+  grid-column-end: line3c;
+  grid-row-start: line2r;
+}
+#contain1 a {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+#contain2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  grid-column-start: line1c;
+  grid-column-end: line3c;
+  grid-row-start: line3r;
+}
+#contain2 a {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+#pic1 {
+  display: flex;
+  grid-column-start: line1c;
+  grid-column-end: line2c;
+  grid-row-start: line2r;
+  grid-row-end: line2r;
+  background-color: white;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+#pic2 {
+  display: flex;
+  grid-column-start: line1c;
+  grid-column-end: line2c;
+  grid-row-start: line3r;
+  grid-row-end: line3r;
+}
+#pic1 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
-#info {
+
+#pic2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+#info1 {
   color: black;
   display: flex;
   flex-direction: column;
@@ -204,9 +265,38 @@ div.textbox span {
   border-bottom-right-radius: 25px;
   padding-left: 10px;
   background-color: #fff;
+  grid-column-start: line2c;
+  grid-column-end: line3c;
+  grid-row-start: line2r;
+  grid-row-end: line2r;
 }
 
-#info h2 {
+#info1 h2 {
+  text-decoration: none;
+  color: black;
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 58px;
+}
+
+#info2 {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-left: 10px;
+  background-color: #fff;
+  grid-column-start: line2c;
+  grid-column-end: line3c;
+  grid-row-start: line3r;
+  grid-row-end: line3r;
+}
+
+#info2 h2 {
   text-decoration: none;
   color: black;
   font-family: Fredoka One;
