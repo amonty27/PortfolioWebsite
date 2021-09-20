@@ -312,14 +312,16 @@ div.textbox span {
 .containerTemp {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto auto 100px;
+  grid-template-rows: auto auto auto auto auto 100px;
   grid-gap: 50px 50px;
   box-sizing: border-box;
   height: auto;
   left: 8.33%;
   right: 8.33%;
 }
-
+.containerTemp button {
+  background: white;
+}
 #imgc1 {
   display: flex;
   align-items: center;
