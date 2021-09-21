@@ -312,8 +312,8 @@ div.textbox span {
 .containerTemp {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto 100px;
-  gap: 25px 50px;
+  grid-template-rows: auto auto auto auto auto auto 100px;
+  gap: 45px 50px;
   box-sizing: border-box;
   height: auto;
   left: 8.33%;
@@ -379,4 +379,15 @@ div.textbox span {
   display: flex;
   align-items: center;
   text-align: right;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: [line1c] 1.5fr [line2c] 2fr [line3c];
+  grid-template-rows: [line1r] 100px [line2r] 200px [line3r] 50px [line4r];
+  gap: 50px 0px;
+  box-sizing: border-box;
+  height: auto;
+  left: 8.33%;
+  right: 8.33%;
 }
