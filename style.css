@@ -444,14 +444,14 @@ div.textbox span {
 
 #contactContainer {
   display: grid;
-  grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr [line4] 1fr [line5];
+  grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr [line4];
   grid-template-rows: 10px auto auto 100px;
   gap: 50px 10px;
 }
 
 #titleCo {
   grid-column-start: line1;
-  grid-column-end: line5;
+  grid-column-end: line4;
   grid-row-start: 2;
   display: flex;
   align-items: center;
@@ -464,4 +464,32 @@ div.textbox span {
   font-family: Fredoka One;
   font-style: normal;
   font-weight: normal;
+}
+
+#img1,
+#img2,
+#img3 {
+  display: flex;
+  justify-content: space-around;
+}
+#img1 img,
+#img2 img,
+#img3 img {
+  width: 200px;
+  height: 200px;
+}
+#img1 {
+  grid-column-start: line1;
+  grid-column-end: line2;
+  grid-row-start: 3;
+}
+#img2 {
+  grid-column-start: line2;
+  grid-column-end: line3;
+  grid-row-start: 3;
+}
+#img3 {
+  grid-column-start: line3;
+  grid-column-end: line4;
+  grid-row-start: 3;
 }
