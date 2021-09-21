@@ -313,14 +313,38 @@ div.textbox span {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto auto 100px;
-  grid-gap: 50px 50px;
+  gap: 25px 50px;
   box-sizing: border-box;
   height: auto;
   left: 8.33%;
   right: 8.33%;
 }
-.containerTemp button {
+#backLink {
   background: white;
+  width: 180px;
+  height: 75px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: bold;
+}
+#backLink:hover {
+  background: rgba(131, 80, 248, 1);
+  width: 180px;
+  height: 75px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: bold;
+  color: white;
 }
 #imgc1 {
   display: flex;
@@ -347,4 +371,12 @@ div.textbox span {
   color: #fff;
   display: flex;
   align-items: center;
+  text-align: left;
+}
+
+#parac2 {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: right;
 }
