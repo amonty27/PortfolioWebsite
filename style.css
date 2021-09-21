@@ -391,3 +391,77 @@ div.textbox span {
   left: 8.33%;
   right: 8.33%;
 }
+
+/* aboutMe.html */
+#aboutContainer {
+  display: grid;
+  grid-template-columns: [line1] 1fr [line2] 1fr [line3];
+  grid-template-rows: 10px auto auto 50px;
+  gap: 50px 10px;
+}
+
+#titleA {
+  grid-column-start: line1;
+  grid-column-end: line3;
+  grid-row-start: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#titleA h2 {
+  color: #fff;
+  font-size: 64px;
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#imgA {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  grid-column-start: line1;
+  grid-column-end: line2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+#imgA img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+  justify-self: center;
+}
+
+#paraA {
+  grid-column-start: line2;
+  grid-column-end: line3;
+  grid-row-start: 3;
+}
+
+#paraA p {
+  color: white;
+}
+
+#contactContainer {
+  display: grid;
+  grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr [line4] 1fr [line5];
+  grid-template-rows: 10px auto auto 100px;
+  gap: 50px 10px;
+}
+
+#titleCo {
+  grid-column-start: line1;
+  grid-column-end: line5;
+  grid-row-start: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#titleCo h2 {
+  color: #fff;
+  font-size: 64px;
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+}
