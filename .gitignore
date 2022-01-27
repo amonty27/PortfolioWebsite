@@ -2,3 +2,6 @@ paste.html
 paste.css
 .vscode
 Other
+node_modules
+package.json
+.parcel-cache
