@@ -322,6 +322,7 @@ div.textbox span {
   height: auto;
   left: 8.33%;
   right: 8.33%;
+  align-content: flex-start;
 }
 #backLink {
   background: white;
@@ -360,6 +361,11 @@ div.textbox span {
   height: 400px;
   object-fit: cover;
   justify-self: center;
+}
+
+.caption {
+  color: #fff;
+  text-align: center;
 }
 
 .containerTemp div#title h2 {
