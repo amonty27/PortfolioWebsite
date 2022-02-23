@@ -308,11 +308,15 @@ div.textbox span {
   line-height: 58px;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* projectPageC_1.html*/
 .containerTemp {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto auto 100px;
+  grid-template-rows: auto auto auto auto auto 0px;
   gap: 45px 50px;
   box-sizing: border-box;
   height: auto;
@@ -372,13 +376,18 @@ div.textbox span {
   display: flex;
   align-items: center;
   text-align: left;
+  flex-direction: column;
+  align-content: center;
 }
 
-#parac2 {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  text-align: right;
+.h3_para {
+  font-family: Fredoka One;
+  text-align: center;
+}
+
+.h4_para {
+  text-align: center;
+  padding-top: 1em;
 }
 
 .container1 {

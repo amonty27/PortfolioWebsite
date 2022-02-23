@@ -36,58 +36,32 @@
             <img src="img/draftWebsite1.png" alt="website image" />
           </div>
           <div id="parac1">
+            <h3 class="h3_para">Introduction</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
-              unde eos eius quas dicta vero architecto molestiae maxime quae,
-              accusantium aliquid cum cumque ipsa dolorem asperiores aliquam
-              consequatur aspernatur reiciendis incidunt exercitationem
-              nesciunt! Sunt, officiis. Alias temporibus perspiciatis voluptatum
-              nemo neque vero quae minima voluptatibus excepturi quidem
-              accusantium odit non ullam sed, eaque dolorum illum numquam
-              deleniti, rem veniam amet asperiores cumque officia! Quaerat
-              placeat in optio ex laborum, a libero voluptatum necessitatibus
-              aliquam deserunt repellat at, distinctio amet tenetur non
-              architecto asperiores! Repellat suscipit hic, beatae ad, dolorem,
-              tenetur corrupti laudantium autem error quis voluptate illum!
-              Quibusdam, non quia adipisci veniam itaque assumenda provident ab
-              necessitatibus, magnam ratione officia nam minus fuga quos
-              deserunt rerum impedit debitis praesentium? Fugit sapiente
-              assumenda voluptas obcaecati placeat deserunt eos nihil inventore
-              alias minima, recusandae ipsa illum fuga quibusdam tenetur quia
-              labore tempora eligendi? Blanditiis iure iusto nisi dolorum,
-              voluptatum obcaecati similique nihil earum accusamus maiores iste
-              ullam quae molestiae omnis non assumenda maxime ipsam cum impedit
-              odit? Est cum quisquam voluptatem rerum minus incidunt repellat
-              accusamus facilis deserunt minima corrupti quo doloribus maiores
-              quaerat ullam architecto, corporis tempore nihil cupiditate neque
-              aspernatur? Eligendi unde quo veniam tempore adipisci harum amet
-              magni est quod accusamus autem voluptatem architecto cumque,
-              officiis expedita dolore molestiae debitis corrupti velit nemo
-              modi. Saepe voluptatum voluptatibus voluptates illum magnam,
-              necessitatibus iste recusandae quae deserunt quisquam, est
-              consequatur fuga, ipsa corporis omnis laudantium officia ex!
-              Impedit eligendi iure repudiandae perferendis, dolorem nihil
-              maiores cum blanditiis quasi est, laudantium nam minus quaerat
-              accusantium sint magnam delectus voluptates debitis asperiores
-              sapiente harum. Quidem aspernatur blanditiis nesciunt excepturi
-              deleniti atque sapiente officia dignissimos? Architecto eum
-              blanditiis ea quod. Ipsa iusto ducimus expedita corrupti non a,
-              totam ipsum labore! Exercitationem voluptatibus natus ipsum
-              ratione, labore similique consequatur expedita non ad officiis
-              tempore deleniti.
+              The Moth Classifier is an embedded system that consist of a Raspberry Pi that takes images of moths and uses machine learning algorithms to correctly identify moths and measure the size of them. <br>
+              The project consists of three major parts. The first part is an embedded system consisting of a motion triggered camera which will take pictures when it detects the motion of a moth. Next is morphospecies classification, where the images taken will be classified as the correct species of moth. Last is specific species classification. This is where images that are classified as the specific species, Malacasoma Americanum, have size analysis performed on them such as wing span and area so that scientist can use this information to aid in their research. <br>
+              My team consisted of three people and we were each assigned to the three different parts. I oversaw the first part, the embedded system that would take the pictures. <br>
             </p>
+            <br>
+            <h3 class="h3_para">Software/Libraries/ Hardware Used</h3>
+            <ul>
+              <li>Amazon AWS Client (AWS CLI) for Raspberry Pi </li>
+              <li>OpenCV</li>
+              <li>PyImages Imutlis Package</li>
+              <li>Figma</li>
+              <li>Autodesk Fusion 360</li>
+              <li>Adobe Premiere</li>
+              <li>Raspberry Pi </li>
+              <li>Raspberry Pi Camera Module V2</li>
+            </ul>
           </div>
-          <div id="parac2">
+          <div id="parac1">
+            <h3 class="h3_para">Project Timeline: Winter Semester</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-              vitae nihil. Magni veritatis eius, incidunt facilis veniam sint
-              est iste suscipit commodi? Placeat asperiores natus, iure
-              voluptate nulla error assumenda laudantium eaque consequatur odit
-              temporibus officiis adipisci doloremque quo quia. Exercitationem
-              temporibus ipsum sequi nam placeat corrupti voluptatem ab iste
-              quia aut libero cum debitis est, porro aliquid voluptatum deserunt
-              dicta sapiente nihil? Consequatur officiis quasi atque molestias
-              quae reiciendis.
+              <h4 class="h4_para">September – October 2019</h4> <br>
+              I began my part of the project by researching the best way to achieve the embedded system setup. We meet with our potential client, a researcher at a university, to talk more about the process that scientist go through when identifying moths. I came up with a drawn mockup of the system so that I could see what equipment/pieces would need to be purchased. I sent the list to our project manager and made the mockup using a cardboard box. I attempted to use Cron, a Linus scheduler, to run the program every few seconds so that we could capture the images of moths periodically. This was not successful, and I went back to revision stage.
+              <h4 class="h4_para">November – December 2019</h4> <br>
+              I continued to try to come up with a more intuitive solution to the problem of taking pictures. I was still attempting to do a time-based system. I used the timer function in python to sleep the system before taking more images. My project manager suggested that I look into motion detection to trigger the camera. They said I should use OpenCV, an open-source computer vision library, which would give me the capability to do just that without any additional hardware.  By the end of December, I had the system prototype, and it was taking images based on time elapsed. I also integrated AWS S3 buckets with my code to upload images taken on the Raspberry Pi directly to the cloud. I attempted to download OpenCV. I tried many times, but I could not figure out how to download and install the software successfully onto the Raspberry Pi. I instead worked on a 3D print for the system by using Autodesk Fusion 360.
             </p>
           </div>
           <div id="imgc1">
@@ -97,26 +71,15 @@
             <img src="img/draftWebsite1.png" alt="website image" />
           </div>
           <div id="parac1">
+            <h3 class="h3_para">Project Timeline: Spring Semester</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur saepe excepturi incidunt aliquam tempore officiis rerum
-              optio eveniet corrupti iure tempora asperiores quisquam illum vel
-              alias aperiam eum ea, laudantium blanditiis animi explicabo?
-              Cumque eos molestiae, cupiditate dolorem delectus laborum?
-              Corporis quas quod obcaecati ad dolore neque vel consectetur,
-              exercitationem, officia optio, natus error unde repellendus atque.
-              Placeat vel corrupti suscipit sint ratione sequi. Minima illum hic
-              blanditiis pariatur dolores, impedit omnis qui repellendus
-              exercitationem? Assumenda, voluptate ex fugit nam voluptatem ab
-              eius fugiat qui itaque beatae delectus quos eaque, necessitatibus
-              iure, voluptas vitae distinctio dolorum fuga ad mollitia.
-              Similique minus esse vel mollitia, excepturi nulla sapiente
-              explicabo omnis voluptatem deleniti maiores id, numquam ut. Ullam
-              harum laborum officiis tenetur enim sapiente? Nobis possimus
-              explicabo, maxime, perspiciatis, eius debitis magnam consequuntur
-              omnis eos non necessitatibus molestiae delectus hic ullam ducimus.
-              Id sapiente cupiditate sed adipisci voluptate sequi totam alias
-              neque.
+              <h4 class="h4_para">January – March 2020</h4> <br>
+              When I got back from winter break, my project manager gave me a Passive infrared sensor (PIR) sensor because OpenCV was not downloading onto the Raspberry Pi. I wrote code so that motion detection with the sensor was working. I was then able to get OpenCV to download and write the code for motion detection with software. I found a useful library created by PyImageSearch which helps with the motion detection image processing for OpenCV. Now the project supports both modes of motion detection. Since I finished my part, I started working on the website design. My team and I began making low fidelity designs on paper to get an idea of what information we would need to have on the website for scientist to properly use. I then used the online tool Figma to come up with a high-fidelity design for the website. <a href="https://www.figma.com/proto/vGS3MnksEpoQZyrMR6v1K9/Me-Moth-and-You?node-id=1%253A2&scaling=min-zoom" target="_blank">Link to Figma Project</a>
+              <h4 class="h4_para">April – May 2020</h4> <br>
+              Covid-19 closes universities across the country, including mine. Many of the plans of the project had to be stopped to compensate for the limited capabilities at home. We revised some parts of the project after advising from our product manager and turned in our final package.
+              <h3 class="h3_para">Future of the Project</h3> <br>
+              In the future, the project will be continued by more seniors in the computer science department of my university. We left documentation and specifications to ensure a clear transition between our team to the next. We also outlined additional features that can be made to make a more concrete product for the scientists to use.
+              <a href="https://amonty27.github.io/MothClassifierWebsite/" target="_blank">Link to Project Page</a>
             </p>
           </div>
         </div>
@@ -128,9 +91,9 @@
           </div>
           <div id="info1">
             <h2>Portfolio Website</h2>
-            <p>This is a little blurb about the project</p>
-            <h4><span id="bold">Languages:</span> HTML, CSS, Javascript</h4>
-            <h4><span id="bold">Date:</span> xx/xx/xxxx</h4>
+            <p>This very website you are on!</p>
+            <h4><span class="bold">Languages:</span> HTML + CSS</h4>
+            <h4><span class="bold">Date:</span>  Feb 2022</h4>
         </div>
       </section>
     </body>
