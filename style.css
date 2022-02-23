@@ -323,6 +323,7 @@ div.textbox span {
   left: 8.33%;
   right: 8.33%;
   align-content: flex-start;
+  align-items: center;
 }
 #backLink {
   background: white;
@@ -379,8 +380,8 @@ div.textbox span {
 
 #parac1 {
   color: #fff;
-  display: flex;
   align-items: center;
+  display: flex;
   text-align: left;
   flex-direction: column;
   align-content: center;
@@ -451,6 +452,8 @@ div.textbox span {
   grid-column-start: line2;
   grid-column-end: line3;
   grid-row-start: 3;
+  align-items: center;
+  display: flex;
 }
 
 #paraA p {
