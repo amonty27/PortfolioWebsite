@@ -416,14 +416,6 @@ div.textbox span {
   padding-left: 20px;
 }
 
-/* aboutMe.html */
-#aboutContainer {
-  /* display: grid;
-  grid-template-columns: [line1] 1fr [line2] 1fr [line3];
-  grid-template-rows: 10px auto auto 50px;
-  gap: 50px 10px; */
-}
-
 #titleA {
   grid-column-start: line1;
   grid-column-end: line3;
@@ -487,7 +479,7 @@ div.textbox span {
 
 #titleCo h2 {
   color: #fff;
-  font-size: 1rem%;
+  font-size: 1rem;
   font-family: Fredoka One;
   font-style: normal;
   font-weight: normal;
