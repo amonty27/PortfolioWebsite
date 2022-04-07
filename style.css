@@ -15,6 +15,7 @@
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
+  width: 100%;
 }
 body {
   background-color: black;
@@ -63,6 +64,7 @@ header .logo {
 .secContainer {
   padding-top: 30px;
   min-height: 50vh;
+  padding-bottom: 30px;
 }
 
 /* Index.html Banner Section*/
@@ -74,12 +76,12 @@ header .logo {
 }
 
 div.textbox {
-  font-size: 48px;
+  /* font-size: 48px; */
   margin: auto;
-}
-div.textbox {
   color: #fff;
+  width: 100%;
 }
+
 div.textbox h2 {
   font-size: 60px;
   font-weight: 400;
@@ -91,8 +93,7 @@ div.textbox span {
   font-weight: bold;
 }
 .picOffice img {
-  width: 400px;
-  height: 400px;
+  width: 100%;
 }
 .picOffice {
   margin: auto;
@@ -100,7 +101,8 @@ div.textbox span {
 
 /* Index.html ProjectSection Section */
 .projectSection {
-  min-height: 100vh;
+  min-height: 100%;
+  margin-bottom: 20px;
 }
 .projectSection h2 {
   color: #fff;
@@ -125,7 +127,7 @@ div.textbox span {
 
 #box {
   width: 100%;
-  height: 900px;
+  height: 100%;
   margin: auto;
   background: radial-gradient(
     95.73% 95.73% at 100% 0%,
@@ -154,7 +156,7 @@ div.textbox span {
   font-family: Fredoka One;
   font-style: normal;
   font-weight: normal;
-  font-size: 72px;
+  font-size: 100%;
   line-height: 87px;
   display: flex;
   align-items: center;
@@ -186,7 +188,7 @@ div.textbox span {
 
 #titleC h2 {
   color: #fff;
-  font-size: 64px;
+  font-size: 200%;
   font-family: Fredoka One;
   font-style: normal;
   font-weight: normal;
@@ -279,8 +281,7 @@ div.textbox span {
   font-family: Fredoka One;
   font-style: normal;
   font-weight: normal;
-  font-size: 2rem;
-  line-height: 58px;
+  font-size: 1rem;
 }
 
 #info2 {
@@ -304,8 +305,7 @@ div.textbox span {
   font-family: Fredoka One;
   font-style: normal;
   font-weight: normal;
-  font-size: 2rem;
-  line-height: 58px;
+  font-size: 1rem;
 }
 
 .bold {
@@ -314,9 +314,9 @@ div.textbox span {
 
 /* projectPageC_1.html*/
 .containerTemp {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto 0px;
+  grid-template-rows: auto auto auto auto auto 0px; */
   gap: 45px 50px;
   box-sizing: border-box;
   height: auto;
@@ -358,15 +358,17 @@ div.textbox span {
   justify-content: space-around;
 }
 #imgc1 img {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   justify-self: center;
+  max-width: 600px;
 }
 
 .caption {
   color: #fff;
   text-align: center;
+  font-style: italic;
 }
 
 .containerTemp div#title h2 {
@@ -374,7 +376,7 @@ div.textbox span {
   font-family: Fredoka One;
   font-style: normal;
   font-weight: normal;
-  font-size: 72px;
+  font-size: 125%;
   line-height: 87px;
 }
 
@@ -385,6 +387,8 @@ div.textbox span {
   text-align: left;
   flex-direction: column;
   align-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .h3_para {
@@ -408,12 +412,16 @@ div.textbox span {
   right: 8.33%;
 }
 
+#ul {
+  padding-left: 20px;
+}
+
 /* aboutMe.html */
 #aboutContainer {
-  display: grid;
+  /* display: grid;
   grid-template-columns: [line1] 1fr [line2] 1fr [line3];
   grid-template-rows: 10px auto auto 50px;
-  gap: 50px 10px;
+  gap: 50px 10px; */
 }
 
 #titleA {
@@ -458,13 +466,14 @@ div.textbox span {
 
 #paraA p {
   color: white;
+  padding: 10px;
 }
 
 #contactContainer {
-  display: grid;
-  grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr [line4];
-  grid-template-rows: 10px auto auto 100px;
+  display: flex;
   gap: 50px 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #titleCo {
@@ -478,10 +487,11 @@ div.textbox span {
 
 #titleCo h2 {
   color: #fff;
-  font-size: 64px;
+  font-size: 1rem%;
   font-family: Fredoka One;
   font-style: normal;
   font-weight: normal;
+  padding-bottom: 10px;
 }
 
 #img1,
